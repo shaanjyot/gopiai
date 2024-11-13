@@ -26,10 +26,10 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "WordPress & Next.js Starter by 9d8",
+  title: "WordPress & Next.js Framework for Oxygen",
   description:
-    "A starter template for Next.js with WordPress as a headless CMS.",
-  metadataBase: new URL("https://wp.9d8.dev"),
+    "A base setup for Next.js with WordPress as a headless CMS.",
+  metadataBase: new URL("https://gopi.ai"),
 };
 
 // Revalidate content every hour
@@ -48,7 +48,7 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
@@ -102,7 +102,7 @@ const Nav = ({ className, children, id }: NavProps) => {
             ))}
           </div>
           <Button asChild className="hidden sm:flex">
-            <Link href="https://github.com/9d8dev/next-wp">Get Started</Link>
+            <Link href="#">Get Started</Link>
           </Button>
           <MobileNav />
         </div>
@@ -159,7 +159,7 @@ const Footer = () => {
         <Container className="border-t not-prose flex flex-col md:flex-row md:gap-2 gap-6 justify-between md:items-center">
           <ThemeToggle />
           <p className="text-muted-foreground">
-            © <a href="https://9d8.dev">9d8</a>. All rights reserved.
+            © <a href="https://simplia.com/">Lotus Interworks</a>. All rights reserved.
             2024-present.
           </p>
         </Container>
