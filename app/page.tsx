@@ -1,5 +1,6 @@
 // Craft Imports
 import { Section, Container } from "@/components/craft";
+import  Hero  from "@/components/ui/hero";
 import Balancer from "react-wrap-balancer";
 
 // Components
@@ -23,15 +24,15 @@ export default function Home() {
 const ExampleJsx = () => {
   return (
     <article className="prose-m-none">
-      <h1>
+      <h3>
         <Balancer>
           Next.js and Wordpress Framework for Oxygen <sup>🚀</sup>
           <a href="https://gopi.ai">gopi.ai</a>.
         </Balancer>
-      </h1>
+      </h3>
       {/* Vercel Clone Starter */}
 
-
+      <div className="prose-m-none"><Hero /></div>
       <div className="grid md:grid-cols-3 gap-4 mt-6 not-prose">
         <Link
           className="border h-48 bg-accent/50 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] transition-all"
