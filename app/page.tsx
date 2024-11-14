@@ -1,7 +1,7 @@
 // Craft Imports
 import { Section, Container } from "@/components/craft";
 import  Hero  from "@/components/ui/hero";
-import Balancer from "react-wrap-balancer";
+import PostGrid from "@/components/ui/postgrid";
 
 // Components
 import Link from "next/link";
@@ -13,7 +13,7 @@ import { File, Pen, Tag, Boxes, User, Folder } from "lucide-react";
 export default function Home() {
   return (
     <Section>
-      <Container>
+      <Container className="py-12">
         <ExampleJsx />
       </Container>
     </Section>
@@ -24,15 +24,11 @@ export default function Home() {
 const ExampleJsx = () => {
   return (
     <article className="prose-m-none">
-      <h3>
-        <Balancer>
-          Next.js and Wordpress Framework for Oxygen <sup>🚀</sup>
-          <a href="https://gopi.ai">gopi.ai</a>.
-        </Balancer>
-      </h3>
-      {/* Vercel Clone Starter */}
+      <>
+      <Hero />
 
-      <div className="prose-m-none"><Hero /></div>
+      </>
+
       <div className="grid md:grid-cols-3 gap-4 mt-6 not-prose">
         <Link
           className="border h-48 bg-accent/50 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] transition-all"
